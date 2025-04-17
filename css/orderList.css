@@ -32,6 +32,8 @@ section{
 
 }
 
+
+
 .card {
     border: 1px #777 solid;
     padding: 30px;
@@ -77,6 +79,10 @@ section{
     padding: 50px;
 }
 
+.right .icon_box > a {
+    cursor: pointer;
+}
+
 .right .right_box {
     float: right;
     margin-top: 20px;
@@ -86,6 +92,7 @@ section{
     margin-top: 40px;
     font-size: 20px;
     color: red;
+    opacity: 0.65;
 }
 
 .img_box img {
@@ -101,4 +108,21 @@ section{
     
   }
 
+  .top {
+    width: 50px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+    border: none;
+    position: fixed;
+    right: 150px;
+    bottom: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
+
+
+
+ 

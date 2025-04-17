@@ -1,74 +1,19 @@
-*{
-    padding: 0;
-    margin: 0;
+*{padding: 0;margin: 0;}
+ul , li {list-style: none;}
+a { text-decoration: none;}
 
-}
+.section {width: 800px;height: 700px;margin: 0 auto;}
+.title_box {text-align: center;}
 
-ul , li {
-    list-style: none;
+.box {width: 400px;height: 800px;margin: 70px auto;}
+.box input[placeholder]{font-size: 15px;}
+.box > p {text-align: center;}
+.box button {margin-top: 50px;width: 100%;height: 50px;border: none;background-color: black;color: white;font-size: 20px;border-radius: 12px;cursor: pointer;}
 
-}
+.box2 {width: 100%;border-bottom: 1px #777 solid;margin-top: 50px;}
+.box2 p {margin-bottom: 10px;}
+.box2 input {border: none;width: 100%;}
+.box2 input:focus { outline: none;}
 
-a {
-    text-decoration: none;
-}
-
-.section {
-    width: 1000px;
-    margin: 0 auto;
-}
-
-.box {
-   
-    
-    width: 800px;
-    height: 500px;
-    padding-top: 100px;
-    
-    margin: 0 auto;
-    
-
-}
-
-.title_box {
-    text-align: center;
-}
-
-.box > p {
-    text-align: center;
-}
-
-.box2 {
-    width: 50%;
-    border-bottom: 1px #777 solid;
-    margin-top: 50px;
-}
-
-.box2 p {
-    margin-bottom: 10px;
-}
-
-.box2 input {
-    border: none;
-    width: 400px;
-}
-
-.box2 input:focus {
-    
-    outline: none;
-
-}
-
-.box button {
-    margin-top: 50px;
-    width: 800px;
-    height: 50px;
-    border: none;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    border-radius: 12px;
-    cursor: pointer;
-}
 
 

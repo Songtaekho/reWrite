@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="../css/prodList.css">
     <link rel="stylesheet" href="../css/common.css">
     <script src="../js/prodList.js"></script>
+    <script src="scrollToTop.js"></script>
 
 </head>
 <body>
+    
     <header class="header">
         <div class="header_top">
             <ul class="header_semi_menu">
@@ -50,51 +52,51 @@
         </div>
     </header>
 
-    <section>
+    <section class="section">
+     
         <div class="box">
-
+            
             <div class="title-box">
                 <h2>상품 리스트</h2>
             </div>
-            
+            <form action="#">
 
-            <div class="card">
-                <img src="../img/까마릴라.jpg" alt="이미지" class="prodImg">
-                <p class="title">까마릴라 팝니당</p>
-                <strong class="price">44,000원</strong>
-                <p class="date">25.04.14</p>
-            </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="../img/까마릴라.jpg" alt="이미지" class="prodImg">
+                        <p class="title">까마릴라 팝니당</p>
+                        <strong class="price">44,000원</strong>
+                        <p class="date">25.04.14</p>
+                    </div>
+                        
+                    <div class="card">
+                        <img src="../img/드릴시바.jpeg" alt="이미지" class="prodImg">
+                        <p class="title">까마릴라 팝니당</p>
+                        <strong class="price">44,000원</strong>
+                        <p class="date">25.04.14</p>
+                    </div>
 
-            <div class="card">
-                <img src="../img/드릴시바.jpeg" alt="이미지" class="prodImg">
-                <p class="title">까마릴라 팝니당</p>
-                <strong class="price">44,000원</strong>
-                <p class="date">25.04.14</p>
-            </div>
+                    <div class="card">
+                        <img src="../img/따봉도치.jpeg" alt="이미지" class="prodImg">
+                        <p class="title">까마릴라 팝니당</p>
+                        <strong class="price">44,000원</strong>
+                        <p class="date">25.04.14</p>
+                    </div>
 
-            <div class="card">
-                <img src="../img/따봉도치.jpeg" alt="이미지" class="prodImg">
-                <p class="title">까마릴라 팝니당</p>
-                <strong class="price">44,000원</strong>
-                <p class="date">25.04.14</p>
-            </div>
+                    <div class="card">
+                        <img src="../img/라이트훅시바.jpeg" alt="이미지" class="prodImg">
+                        <p class="title">까마릴라 팝니당</p>
+                        <strong class="price">44,000원</strong>
+                        <p class="date">25.04.14</p>
+                    </div>
+                    
+            </form>
+         </div>
 
-            <div class="card">
-                <img src="../img/라이트훅시바.jpeg" alt="이미지" class="prodImg">
-                <p class="title">까마릴라 팝니당</p>
-                <strong class="price">44,000원</strong>
-                <p class="date">25.04.14</p>
-            </div>
-
-
-           
-
-
-            
         </div>
 
-        <button class="top">TOP</button>
-
+        <button class="top" onclick="scrollToTop()">TOP</button>
+    </form>
     </section>
     <footer class="footer">
         <div class="footer_wrap">
@@ -130,6 +132,12 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        </script>
     
 </body>
 </html>

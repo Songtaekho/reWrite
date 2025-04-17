@@ -16,23 +16,44 @@ a {
 .title-box {
     text-align: center;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .box {
-    margin: 0 auto;
+    /* flexbox 방식 */
+    display: flex;
+    flex-wrap: wrap;
     width: 1000px;
-    height: 600px;
+    margin: 0 auto;
+    min-height: 500px;
     padding-top: 100px;
     padding-left: 200px;
     padding-right: 200px;
-    
+  }
+
+
+  .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* 카드가 왼쪽 정렬 */
+  gap: 20px; /* 카드 사이 여백 */
+  width: 1000px;  /* 필요에 따라 조절 */
+  margin: 0 auto;
 }
 
 .card {
-    float: left;
-    width: 25%;
-    margin-bottom: 20px;
+  flex: 0 0 calc(25% - 20px); /* 한 줄에 4개, gap 고려 */
+  box-sizing: border-box;
+  margin-bottom: 40px;
 }
+
+  .footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    /* position 속성 없음 */
+  }
 
 .card > img{
 
@@ -55,8 +76,8 @@ a {
     border: none;
     position: fixed;
     right: 150px;
-
-    
     bottom: 100px;
     border-radius: 8px;
+    cursor: pointer;
 }
+
